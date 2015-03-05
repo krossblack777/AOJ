@@ -7,6 +7,7 @@ while true
   puts "Case #{num}: #{a}"
   num += 1
 end
+
 =begin
 
 caseNo = 1
@@ -21,6 +22,8 @@ end
 puts"Case #$.: #$_"while'0
 '!=gets
 謎
+
+$. いずれかの IO オブジェクトが最後に読んだ行の行番号です。
 
 i=0;while "0\n"!=x=gets
 puts"Case #{i+=1}: #{x}"end
