@@ -19,6 +19,15 @@ $_ : Kernel.#gets or Kernel.#readlinで読み込んだ文字
 p eval$_ while !gets['?']]
 でも同じようになる!getsで特定の文字列が含まれている場合にfalseを返す
 
+#===
+?x は x という１文字からなる文字列です(Ruby 1.9以降)
+?? なら "?" と等価。
+gets[??] の[] は String#[string] です。
+gets から返ってきた String が "?" にマッチしているならその部分を返します。
+マッチしなければ nil が返ります。
+puts eval input while !((input = gets)['?'])
+#===
+
 while(exp=gets).split[1]!='?'
   puts eval(exp)
 end
